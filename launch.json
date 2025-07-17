@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Debug API",
+        "skipFiles": ["<node_internals>/**"],
+        "program": "${workspaceFolder}/server.js",  // or server.js if that’s your entry point
+        "env": {
+          "NODE_ENV": "development"
+        }
+      }
+    ]
+  }
+  
