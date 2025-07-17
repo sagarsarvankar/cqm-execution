@@ -4,6 +4,7 @@
   "description": "NPM module for calculating eCQMs (electronic clinical quality measures) written in CQL (clinical quality language).",
   "main": "lib/index.js",
   "scripts": {
+    "start": "node server.js",
     "test": "npx jest --coverage",
     "jest": "npx jest",
     "lint": "eslint 'lib/*.js' 'lib/**/*.js' 'spec/*.js' 'spec/**/*.js'",
@@ -54,9 +55,14 @@
     "require-directory": "^2.1.1"
   },
   "dependencies": {
+    "body-parser": "^2.2.0",
+    "compression": "^1.8.0",
+    "cqm-execution": "^4.4.0",
     "cqm-models": "4.3.0",
+    "express": "^5.1.0",
     "lodash": "^4.17.19",
-    "moment": "^2.29.4"
+    "moment": "^2.29.4",
+    "winston": "^3.17.0"
   },
   "resolutions": {
     "braces": "3.0.3"
