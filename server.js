@@ -4,6 +4,8 @@ const calculator = require('cqm-execution').Calculator;
 const compression = require('compression');
 const winston = require('winston');
 
+require('dotenv').config();
+
 app.use(compression());
 app.use(bodyParser.json({ limit: '100mb' }));
 app.use(bodyParser.urlencoded({ extended: true, limit: '50mb', parameterLimit: '5000' }));
